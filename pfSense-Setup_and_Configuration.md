@@ -54,13 +54,16 @@ Vùng mạng trung gian nằm giữa, vùng server public để cô lập các s
      - Add em2: đây là VMnet 3
 <img width="1007" height="717" alt="image" src="https://github.com/user-attachments/assets/bad87656-08cf-448f-aee3-bc0c23274a69" />
      - Chỉnh sửa OPT1
-<img width="962" height="641" alt="image" src="https://github.com/user-attachments/assets/8ac22507-6b25-4bca-bd1f-08eae382a113" />
+<img width="771" height="492" alt="image" src="https://github.com/user-attachments/assets/a42739a2-4fd3-4476-a05d-406f482f0ae4" />
 
 <img width="954" height="243" alt="image" src="https://github.com/user-attachments/assets/d994ab4b-9bbd-4de5-9224-7cf178eb7cfd" />
      - Kiểm tra trong pfsense sẽ thấy có thêm DMZ
 <img width="818" height="966" alt="image" src="https://github.com/user-attachments/assets/e76e6adb-7a89-47a0-86f7-9375bf9dffbf" />
-2.5.2 Cấu hình Firewall rules cho DMZ
 
-     - 
+2.5.2 Cấu hình Firewall rules cho DMZ
+   - Cấu hình rule cho các máy trong DMZ có thể ping ra internet
+   + Chọn firewall -> rules -> DMZ
+     <img width="930" height="632" alt="image" src="https://github.com/user-attachments/assets/6d8f9293-179b-421b-a3c0-9e0280d6c2e3" />
+   + Thử thêm 1 máy ảo vào mạng DMZ, thiết lập IP tĩnh và df gateway trỏ về IP DMZ của pfsense. Nếu ktra ping vào "gg.com" thì sẽ thành công
 3. 
     
